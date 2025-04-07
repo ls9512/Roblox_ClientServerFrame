@@ -13,7 +13,7 @@ A utility class that handles general-purpose tasks such as event creation and er
 The core server script. It receives requests from clients and dispatches them to specific modules, processes the return results, and sends them back to the clients. It can also be used to actively send messages to specific clients or all players.
 
 # How to use
-## 使用规范
+## Usage Guidelines
 Client-to-server request code must be called through LocalScript, while server-side logic must be invoked through Script. There are two types of network requests: Request and Broadcast. The routing structure follows a Module / Action / Param pattern, where functionality is grouped by Module, each containing multiple Actions (request handlers), each of which can accept custom Params. More details and examples are provided below.
 
 ## Request
